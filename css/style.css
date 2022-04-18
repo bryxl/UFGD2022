@@ -31,6 +31,8 @@ p {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .hide {
@@ -57,7 +59,7 @@ p {
 }
 
 #left-screen img {
-    width: 55%;
+    width: 50%;
     height: auto;
     margin-bottom: 15px;
 }
@@ -73,6 +75,7 @@ p {
 /* RIGHT SCREEN */
 
 #right-screen {
+    background-color: black;
     width: 100%;
     height: 100%;
 
