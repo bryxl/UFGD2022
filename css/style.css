@@ -5,7 +5,7 @@ body {
 h1 {
     font-family: desire-pro,serif;
     font-weight: 400;
-    font-size: 74px;
+    font-size: 76px;
     font-style: normal;
     letter-spacing: 2px;
 }
@@ -13,7 +13,7 @@ h1 {
 h2 {
     font-family: desire-pro,serif;
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 68px;
     font-style: normal;
     letter-spacing: 2px;
 }
@@ -22,15 +22,15 @@ p {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    font-style: normal;
 }
 
 /* SPLIT SCREEN ALL */
 
-.split-screen {
+#split-screen {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    margin-bottom: 12%;
 }
 
 .hide {
@@ -39,11 +39,12 @@ p {
 
 .show {
     display: block;
+    z-index: 2;
 }
 
 /* LEFT SCREEN */
 
-.left-screen {
+#left-screen {
     background-color: black;
     color: white;
     overflow: scroll;
@@ -51,13 +52,14 @@ p {
     text-align: center;
 }
 
-.left-screen p {
+#left-screen p {
     text-align: left;
 }
 
-.left-screen img {
+#left-screen img {
     width: 55%;
     height: auto;
+    margin-bottom: 15px;
 }
 
 #firstScreen {
@@ -70,14 +72,27 @@ p {
 
 /* RIGHT SCREEN */
 
-.right-screen {
+#right-screen {
     width: 100%;
+    height: 100%;
+
+    display: grid;
+    align-content: center;
+
+    grid-gap: 12px 12px;
+    grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+}
+
+.grid-item {
+
 }
 
 .card {
     background-color: black;
     border: none;
     border-radius: 0%;
+    margin: 6px 4px 6px 4px;
 }
 
 .card a {
@@ -88,7 +103,7 @@ p {
 .card img {
     border: none;
     height: 150px;
-    object-fit: scale-down;
+    width: 150px;
 }
 
 .col-lg {
@@ -263,44 +278,3 @@ p {
 #peyton-a, #sasa-a, #wyatt-a, #valerie-a {
     margin-bottom: 0;
 }
-
-
-@media screen and (max-width: 992px) {
-
-
-    .split-screen {
-        width: 100%;
-        height: auto;
-    }
-
-    .left-screen {
-        height: 100%;
-        padding: 10px;
-    }
-
-    #firstScreen {
-        text-align: center;
-        margin-top: 20%;
-        height: 100%;
-    }
-
-    .card {
-        margin: 0px;
-    }
-
-    #abi-a, #arlie-a, #brianne-a, #christine-a {
-        margin-top: 0px;
-    }
-    
-    #abi-a, #delaney-a, #jules-a, #majo-a, #peyton-a {
-        margin-left: 0px;
-    }
-    
-    #christine-a, #gina-a, #olivia-a, #maddie-a, #valerie-a {
-        margin-right: 0px;
-    }
-    
-    #peyton-a, #sasa-a, #wyatt-a, #valerie-a {
-        margin-bottom: 0px;
-    }
-  }
