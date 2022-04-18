@@ -1,0 +1,306 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: desire-pro,serif;
+    font-weight: 400;
+    font-size: 74px;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-family: desire-pro,serif;
+    font-weight: 400;
+    font-size: 4vw;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* SPLIT SCREEN ALL */
+
+.split-screen {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 12%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* LEFT SCREEN */
+
+.left-screen {
+    background-color: black;
+    color: white;
+    overflow: scroll;
+    padding: 80px 80px 0px 80px;
+    text-align: center;
+}
+
+.left-screen p {
+    text-align: left;
+}
+
+.left-screen img {
+    width: 55%;
+    height: auto;
+}
+
+#firstScreen {
+    text-align: center;
+    position: absolute;
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%); 
+}
+
+/* RIGHT SCREEN */
+
+.right-screen {
+    width: 100%;
+}
+
+.card {
+    background-color: black;
+    border: none;
+    border-radius: 0%;
+}
+
+.card a {
+    height: 100%;
+    width: 100%;
+}
+
+.card img {
+    border: none;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.col-lg {
+    margin: 0px;
+}
+
+/* HIDE/UNHIDE PEOPLE */
+
+.hide, #abi-a:hover .show {
+    display: none;
+}
+
+.show, #abi-a:hover .hide {
+    display: block;
+}
+
+.hide, #arlie-a:hover .show {
+    display: none;
+}
+
+.show, #arlie-a:hover .hide {
+    display: block;
+}
+
+.hide, #brianne-a:hover .show {
+    display: none;
+}
+
+.show, #brianne-a:hover .hide {
+    display: block;
+}
+
+.hide, #christine-a:hover .show {
+    display: none;
+}
+
+.show, #christine-a:hover .hide {
+    display: block;
+}
+
+.hide, #delaney-a:hover .show {
+    display: none;
+}
+
+.show, #delaney-a:hover .hide {
+    display: block;
+}
+
+.hide, #eva-a:hover .show {
+    display: none;
+}
+
+.show, #eva-a:hover .hide {
+    display: block;
+}
+
+.hide, #gianna-a:hover .show {
+    display: none;
+}
+
+.show, #gianna-a:hover .hide {
+    display: block;
+}
+
+.hide, #gina-a:hover .show {
+    display: none;
+}
+
+.show, #gina-a:hover .hide {
+    display: block;
+}
+
+.hide, #jules-a:hover .show {
+    display: none;
+}
+
+.show, #jules-a:hover .hide {
+    display: block;
+}
+
+.hide, #kevin-a:hover .show {
+    display: none;
+}
+
+.show, #kevin-a:hover .hide {
+    display: block;
+}
+
+.hide, #kt-a:hover .show {
+    display: none;
+}
+
+.show, #kt-a:hover .hide {
+    display: block;
+}
+
+.hide, #maddie-a:hover .show {
+    display: none;
+}
+
+.show, #maddie-a:hover .hide {
+    display: block;
+}
+
+.hide, #majo-a:hover .show {
+    display: none;
+}
+
+.show, #majo-a:hover .hide {
+    display: block;
+}
+
+.hide, #marissa-a:hover .show {
+    display: none;
+}
+
+.show, #marissa-a:hover .hide {
+    display: block;
+}
+
+.hide, #natalie-a:hover .show {
+    display: none;
+}
+
+.show, #natalie-a:hover .hide {
+    display: block;
+}
+
+.hide, #olivia-a:hover .show {
+    display: none;
+}
+
+.show, #olivia-a:hover .hide {
+    display: block;
+}
+.hide, #peyton-a:hover .show {
+    display: none;
+}
+
+.show, #peyton-a:hover .hide {
+    display: block;
+}
+
+.hide, #sasa-a:hover .show {
+    display: none;
+}
+
+.show, #sasa-a:hover .hide {
+    display: block;
+}
+
+.hide, #wyatt-a:hover .show {
+    display: none;
+}
+
+.show, #wyatt-a:hover .hide {
+    display: block;
+}
+
+.hide, #valerie-a:hover .show {
+    display: none;
+}
+
+.show, #valerie-a:hover .hide {
+    display: block;
+}
+
+#abi-a, #arlie-a, #brianne-a, #christine-a {
+    margin-top: 0;
+}
+
+#peyton-a, #sasa-a, #wyatt-a, #valerie-a {
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .split-screen {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-screen {
+        height: 100%;
+        padding: 10px;
+    }
+
+    #firstScreen {
+        text-align: center;
+        margin-top: 20%;
+        height: 100%;
+    }
+
+    .card {
+        margin: 0px;
+    }
+
+    #abi-a, #arlie-a, #brianne-a, #christine-a {
+        margin-top: 0px;
+    }
+    
+    #abi-a, #delaney-a, #jules-a, #majo-a, #peyton-a {
+        margin-left: 0px;
+    }
+    
+    #christine-a, #gina-a, #olivia-a, #maddie-a, #valerie-a {
+        margin-right: 0px;
+    }
+    
+    #peyton-a, #sasa-a, #wyatt-a, #valerie-a {
+        margin-bottom: 0px;
+    }
+  }
