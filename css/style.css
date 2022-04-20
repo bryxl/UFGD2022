@@ -117,10 +117,12 @@ p {
 
 .hide, #abi-a:hover .show {
     display: none;
+    transition: all 5s;
 }
 
 .show, #abi-a:hover .hide {
     display: block;
+    transition: all 5s;
 }
 
 .hide, #arlie-a:hover .show {
